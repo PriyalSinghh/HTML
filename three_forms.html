@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 1</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="url" method="get" accept-charset="utf-8" autocomplete="on" enctype="text/plain">
+        <label for="fname">First-Name</label> 
+        <!-- //alywas use label for each input because some screen readers are not able to read placeholders, give same name for id in input and for in label -->
+        <input type="text" placeholder="First-Name" id="fname">
+        <label for="lname">Last-Name</label>
+        <input type="text" placeholder="Last-Name" id="lname">
+        <input type="reset" value="Priyal">
+        <!-- <input type="password" name="" id=""> -->
+         <!-- To know different types of input, just type "input:" you will get everything which is under input -->
+        <input type="week" name="" id="">
+        <select name="editors" id="" multiple>
+            <option value="vscode">VS Code</option>
+            <option value="sublime">Sublime</option>
+
+        </select>
+
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="vscode">VS Code</option>
+            <option value="sublime">Sublime</option>   
+        </datalist>
+        <input type="hidden">
+        <!-- this hidden type is mostly used in Django when we need to hide some credential or tokens -->
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
